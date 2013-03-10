@@ -1,0 +1,27 @@
+{
+  "name": "locke-client",
+  "version": "0.3.0",
+  "description": "...",
+  "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
+  "main": "./lib/client.js",
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "scripts": {
+    "pretest": "coffee -co lib src",
+    "prepublish": "coffee -co lib src",
+    "coverage": "jscov src .cov && JSCOV=.cov mocha --compilers coffee:coffee-script --reporter mocha-term-cov-reporter spec/*.coffee",
+    "test": "mocha --compilers coffee:coffee-script spec/*.coffee"
+  },
+  "dependencies": {
+    "jsonrpc-http-client-node": "0.1.0",
+    "nameify": "0.1.1"
+  },
+  "devDependencies": {
+    "coffee-script": "1.6.1",
+    "jscov": "0.4.1",
+    "mocha": "1.8.1",
+    "mocha-term-cov-reporter": "0.1.0",
+    "should": "1.2.2"
+  }
+}
