@@ -1,7 +1,7 @@
 {
-  "name": "locke-client",
+  "name": "locke-client-jsonrpc",
   "version": "0.3.1",
-  "description": "...",
+  "description": "A locke client over JSONRPC",
   "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
   "main": "./lib/client.js",
   "engines": {
