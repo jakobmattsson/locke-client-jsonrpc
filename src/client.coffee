@@ -16,8 +16,3 @@ exports.construct = ({ jsonrpcClient }) ->
     resetPassword: ['app', 'email', 'resetToken', 'newPassword']
     sendValidation: ['app', 'email']
     validateUser: ['app', 'email', 'validationToken']
-
-# locke = lockeClient.construct
-#   jsonrpcClient: json.construct
-#     endpoint: 'http://locke.herokuapp.com'
-#     timeout: 2000

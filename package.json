@@ -1,6 +1,6 @@
 {
   "name": "locke-client",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "...",
   "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
   "main": "./lib/client.js",
@@ -14,13 +14,13 @@
     "test": "mocha --compilers coffee:coffee-script spec/*.coffee"
   },
   "dependencies": {
-    "jsonrpc-http-client-node": "0.1.0",
     "nameify": "0.1.1"
   },
   "devDependencies": {
     "coffee-script": "1.6.1",
     "jscov": "0.4.1",
     "mocha": "1.8.1",
+    "jsonrpc-http-client-node": "0.1.0",
     "mocha-term-cov-reporter": "0.1.0",
     "should": "1.2.2"
   }
