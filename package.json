@@ -5,7 +5,11 @@
   "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
   "main": "./lib/client.js",
   "engines": {
-    "node": ">= 0.8"
+    "node": ">= 0.8 < 0.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jakobmattsson/locke-client-jsonrpc.git"
   },
   "scripts": {
     "pretest": "coffee -co lib src",
@@ -14,14 +18,14 @@
     "test": "mocha --compilers coffee:coffee-script spec/*.coffee"
   },
   "dependencies": {
-    "nameify": "0.1.1"
+    "nameify": "^0.1.1"
   },
   "devDependencies": {
-    "coffee-script": "1.6.1",
-    "jscov": "0.4.1",
-    "mocha": "1.8.1",
-    "jsonrpc-http-client-node": "0.1.0",
-    "mocha-term-cov-reporter": "0.1.0",
-    "should": "1.2.2"
+    "coffee-script": "^1.6.1",
+    "jscov": "^0.5.3",
+    "mocha": "^1.8.1",
+    "jsonrpc-http-client-node": "^0.1.0",
+    "mocha-term-cov-reporter": "^0.1.0",
+    "should": "^1.2.2"
   }
 }
